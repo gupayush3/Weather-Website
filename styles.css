@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/clear.jpg');
+    height: 100vh;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-size: cover;
+}
+
+.main{
+    width: 50vh;
+    margin: 100px auto;
+    background-color: rgba(240, 193, 135, 0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+/* creating spacing for child element of main  */
+.main > *{ 
+    margin-bottom:20px ;
+}
+
+.input_box{
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;
+    text-align:center
+}
+
+.input_box:focus{
+    background-color: rgb(224, 230, 135);
+}
+
+.weather-info{
+    display: none;
+    color:crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    height: 50vh;
+
+}
+
+.location-info{
+    font-weight: bold;
+    
+}
+
+.weather-status{
+    padding: 20px;
+}
+
+.temp{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px yellow;
+}
+
+.min-max, .weather{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
